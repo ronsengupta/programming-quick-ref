@@ -16,6 +16,15 @@ func (t *Test) goodby() {
 
 func main() {
     t := Test{Name: "nak3"}
+
     t.hello()   
-    t.goodby()   
+    t.goodby()
+
+    f_hello := t.hello   
+    f_goodby := t.goodby
+
+    t.Name = "kenjiro" 
+
+    f_hello()   
+    f_goodby()
 }
