@@ -1,0 +1,8 @@
+RULE trace entry sayHello-stack
+CLASS nak3.com.Hello
+METHOD sayHello
+AT ENTRY
+IF TRUE
+  DO Thread.sleep(3000)
+ENDRULE
+
